@@ -77,26 +77,33 @@ nav ul li a:hover {
 
 .students-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
+
 .student-card img {
-    width: 35%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin: 20px auto; 
+    display: block;
+
 }
 
 
+
 .student-card {
-    
     background-color: white;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px; /* กำหนดขนาดความกว้างสูงสุด */
+
+    text-align: center; /* จัดเนื้อหาให้อยู่ตรงกลาง */
 }
 
 .student-card:hover {
