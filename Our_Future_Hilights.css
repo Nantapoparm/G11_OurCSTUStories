@@ -10,7 +10,7 @@ body {
 /* Nav bar */
 nav {
     /* รอเปลี่ยนสี */
-    background-color: orange;
+    background-color: #4297a0;
     padding: 1.5rem;
     text-align: center;
 }
@@ -19,6 +19,8 @@ nav a {
     text-decoration: none;
     padding: 1.5rem;
     font-size: 1.5rem;
+    color: #f4eae6;
+    font-family: "Josefin Sans", sans-serif;
 }
 /* section info */
 .container {
@@ -26,7 +28,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     /* รอเปลี่ยนสี */
-    background-color: azure;
+    background-color: #f4eae6;
     justify-content: center;
     align-items: center ;
 }
@@ -37,20 +39,22 @@ nav a {
     height: 450px;
     margin: 1rem;
     padding: 1rem;
-    background-color: pink;
+    background-color: #e57f84;
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 10px;
 }
 
 .picture {
     width: 100%;
     height: 85%;
-    background-color: gray;
+    background-color: #4297a0;
     object-fit: cover;
     overflow: hidden;
-    margin: 10px auto;
+    margin: 5px auto;
     display: block;
+    border-radius: 5px;
 }
 .picture img {
     width: 100%;
@@ -59,6 +63,8 @@ nav a {
 
 .name {
     margin-top: 1rem;
+    font-family: "Mali", cursive;
+    color: #1f3d4d;
 }
 .text1 {
     position: absolute;
@@ -70,12 +76,37 @@ nav a {
     font-size: 18px;
     opacity: 0; /* ข้อความ "text1" เริ่มต้นแสดง */
     transition: opacity 0.5s ease; /* ให้มีการเปลี่ยนแปลงของ opacity เมื่อคลิก */
+    font-family: "Mali", cursive;
 }
-
+.loop {
+    display: flex;
+    border: 0.25px solid #2f5061;
+    margin-inline: auto;
+    position: relative;
+    white-space: nowrap;
+}
+@keyframes scroll-text {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.text {
+    display: inline-block ;
+    animation: scroll-text 30s linear infinite; linear infinite;
+    margin: 0;
+    font-size: larger;
+    color: #e57f84;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0.5rem;
+}
 .card.clicked .picture img {
     opacity: 0; /* ทำให้รูปหาย */
 }
-
 .card.clicked .text1 {
     opacity: 1; /* ทำให้ข้อความใน "text1" ปรากฏ */
 }
+
+
