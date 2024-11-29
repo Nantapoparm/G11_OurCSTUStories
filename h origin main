@@ -1,0 +1,79 @@
+[33mcommit 0f6d0204426f0acb6d62f7113bf8d4babbcc4571[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 7b436fe 3b84050
+Author: Your Name <you@example.com>
+Date:   Thu Nov 28 22:58:51 2024 +0700
+
+    change color and first pattarn for basic any year
+
+[33mcommit 7b436fe567f6edc3de660873c103ba22d5a03286[m
+Author: Your Name <you@example.com>
+Date:   Thu Nov 28 22:55:54 2024 +0700
+
+    change pattern and adjust color
+
+[33mcommit 3b84050717cb90b464ab8ce91d74791e973351f4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nadhsikarn <Nadhsikarn.jon@dome.tu.ac.th>
+Date:   Thu Nov 28 21:37:44 2024 +0700
+
+    Add scrolling text and change font,bg color in html and css for Our_Future_Hilights
+
+[33mcommit 4417b431bcdaf0c0a2aa48eaaaa1e8ac0b6ead15[m
+Author: Nadhsikarn <Nadhsikarn.jon@dome.tu.ac.th>
+Date:   Wed Nov 27 21:27:43 2024 +0700
+
+    Add resources file , Our_Future_Hilights.js and update html css and javascript for interactive image click
+
+[33mcommit 6f0d3e31ef2bf304d0701567a482e1fa6ee3aaaf[m
+Merge: 2754021 a31436e
+Author: Your Name <you@example.com>
+Date:   Wed Nov 27 16:35:56 2024 +0700
+
+    adjust about work fot begin write text in website
+
+[33mcommit 2754021ce9a8e85f79e547fb4bf30cff4accb4d6[m
+Author: Your Name <you@example.com>
+Date:   Wed Nov 27 16:32:16 2024 +0700
+
+    change pattern in websiteand begin write text about 4 year
+
+[33mcommit a31436eda89156786a83e14e690acdd371a250a3[m
+Author: Printan <printan.nun@dome.tu.ac.th>
+Date:   Wed Nov 27 15:57:16 2024 +0700
+
+    Style OurFuture
+
+[33mcommit 12ed36f9193f3b7df0d63a927468673c83d9aa81[m
+Author: Printan <printan.nun@dome.tu.ac.th>
+Date:   Wed Nov 27 15:43:57 2024 +0700
+
+    Add structure html
+
+[33mcommit 34fecc07676e56f776dc3db711d80b521247870e[m
+Author: Printan <printan.nun@dome.tu.ac.th>
+Date:   Wed Nov 27 15:34:09 2024 +0700
+
+    Change title and linked CSS
+
+[33mcommit c7eeb3bee7e3f9c663f87f55017dbae512268c84[m
+Author: Nadhsikarn <Nadhsikarn.jon@dome.tu.ac.th>
+Date:   Wed Nov 27 01:02:25 2024 +0700
+
+    add Our_Future_Hilights.html and Our_Future_Hilights.css
+
+[33mcommit 07254bd6c4337a6e7f97bbb68ca767b42d5362c1[m
+Author: Nadhsikarn <Nadhsikarn.jon@dome.tu.ac.th>
+Date:   Wed Nov 27 00:36:48 2024 +0700
+
+    add team member to README.md
+
+[33mcommit 5ed3a5e2bc75a3d2581eebc97a54a6a5103fa9e0[m
+Author: Your Name <you@example.com>
+Date:   Wed Nov 27 00:12:56 2024 +0700
+
+    building box 4 box fot any year about our plan
+
+[33mcommit f17d965503b368c7a11a8ff5eda10b424ebd4681[m
+Author: Nantapoparm <nantapop.cho@dome.tu.ac.th>
+Date:   Sun Nov 24 11:47:43 2024 +0700
+
+    Initial commit
