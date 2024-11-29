@@ -12,13 +12,15 @@ body {
     font-size: 60px;
     font-family: 'Arial', sans-serif;
     width: 100%;
-    height: 200px;
+    height: 150px;
     place-items: center;
-    
+   /* background-color: #dd9090 ;
+    border: 6px  outset #ee2e2e65;
+    box-shadow: 10px 10px   brown;*/
 }
 
 
-.box1,.box2{
+.box {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 40px; 
@@ -28,7 +30,7 @@ body {
 }
 
 
-.box11, .box12, .box13, .box14,.box21, .box22, .box23, .box24 {
+.box1, .box2, .box3, .box4 {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     background-color: #ffccbc;
@@ -36,13 +38,18 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     overflow: hidden; 
-    height: auto;
+   /* height: auto;*/
     min-height: 300px;
-
+  /*  border-radius: 20px;
+    box-shadow:  5px 5px rgb(248, 40, 40);*/
+}
+.box12 img, .box22 img, .box32 img, .box42 img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
-
-.box111 ,.box112,.box121,.box122,.box131,.box132,.box141,.box142,.box211,.box212,.box221,.box222,.box231,.box232,.box241,.box242{
+.box11 ,.box12,.box21,.box22,.box31,.box32,.box41,.box42{
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -50,82 +57,26 @@ body {
     font-size: 18px;
     color: #333;
     border-right: 1px solid #dd9090; 
-    
 }
-.box112 img, .box122 img, .box132 img, .box142 img,.box212 img, .box222 img, .box232 img, .box242 img {
-    max-width: 100%; 
-    height: auto; 
-    object-fit: cover; 
+.name{
+    padding: 20px;
+    background-color: #ffcccc; 
+   /* border: 2px inset #dd5b34; */
+    text-align: center; 
+    width: 100%;
+   /* box-shadow: 5px 5px 30px inset rgb(238, 63, 63);*/
 }
-
-.boxname1 ,.boxname2{
-    text-align: center;
-    font-size: large;
-    background-color: antiquewhite;
-}
-
-
-
-@media screen and (max-width: 768px) {
-    body {
-        background-color: rgb(255, 255, 255);
-        
-        font-family: 'Arial', sans-serif;
-    }
-    
-    
-    .head {
-        display: grid;
-        text-align: center;
-        font-size: 60px;
-        font-family: 'Arial', sans-serif;
-        width: 100%;
-        height: 200px;
-        place-items: center;
-        
-    }
-    
-    
-    .box1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 40px; 
-        margin: 40px auto;
-        width: 90%;
-        
-    }
-    
-    
-    .box11, .box12, .box13, .box14 {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        background-color: #ffccbc;
-        border: 1px solid #dd9090;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        overflow: hidden; 
-        height: auto;
-        min-height: 300px;
-    
-    }
-    
-    
-    .box111 ,.box112,.box121,.box122,.box131,.box132,.box141,.box142{
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        padding: 10px;
-        font-size: 18px;
-        color: #333;
-        border-right: 1px solid #dd9090; 
-        
-    }
-    .box112 img, .box122 img, .box132 img, .box142 img {
-        max-width: 100%; 
-        height: auto; 
-        object-fit: cover; 
-    }
+.namecontain{
+    display: flex; 
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 
-
+/* Responsive: เมื่อหน้าจอเล็กกว่า 768px */
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: 1fr; 
+    }
+}

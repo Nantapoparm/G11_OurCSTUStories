@@ -1,0 +1,225 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    background: linear-gradient(135deg, gray, #93c995);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+nav {
+    background-color: #a49999;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #692c2c;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.students-info {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.students-info h2 {
+    font-size: 2em;
+    
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.students-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.student-card img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin: 20px auto; 
+    display: block;
+
+}
+
+
+
+.student-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px; /* กำหนดขนาดความกว้างสูงสุด */
+
+    text-align: center; /* จัดเนื้อหาให้อยู่ตรงกลาง */
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.student-card h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin: 15px 0;
+}
+
+.student-card p {
+    padding: 0 20px 20px;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    position: relative;
+}
+.guest-book {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.guest-book h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+
+.guest-book-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.guest-form,
+.guest-entries {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guest-form h3,
+.guest-entries h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45A049;
+}
+
+
+#entriesList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#entriesList li {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

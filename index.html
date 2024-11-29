@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our CSTU Stories</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to Our CSTU Stories</h1>
+            <p>เรื่องราวเกี่ยวกลุ่มเพื่อนของพวกเรา</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="journey.html">Our Journey Highlights</a></li>
+            <li><a href="Our_Future_Hilights.html">Our Future Highlights</a></li>
+        </ul>
+    </nav>
+
+    <section class="students-info">
+        <h2>ข้อมูลนักศึกษา</h2>
+        <div class="students-container">
+            <div class="student-card">
+                <img src="pic/a.jpg" alt="Student 1">
+                <h3>นางสาวณัฐศิกาญจน์ จงภิญโญตระกูล</h3>
+                <h4>ID : 6709616491</h4>
+                <p>i love moodeng</p>
+            </div>
+            <div class="student-card">
+                <img src="pic/b.png" alt="Student 2">
+                <h3>นายพรินทาน หนุนนชู</h3>
+                <h4>ID : 6709616673</h4>
+                <p>ข้อมูลข้อมูลข้อมูล 2</p>
+            </div>
+            <div class="student-card">
+                <img src="pic/c.png" alt="Student 3">
+                <h3>นายชัชวีร์ ไทยเจริญ</h3>
+                <h4>ID : 6709616426</h4>
+                <p>ข้อมูลข้อมูลข้อมูล 3</p>
+            </div>
+            <div class="student-card">
+                <img src="pic/d.jpg" alt="Student 4">
+                <h3>นายนันทภพ ชนชอบธรรม</h3>
+                <h4>ID : 6709616582</h4>
+                <p>ข้อมูลข้อมูลข้อมูล 4</p>
+            </div>
+            <div class="student-card">
+                <img src="pic/f.jpg" alt="Student 5">
+                <h3>นายปวริศร์ มั่งนิมิตร</h3>
+                <h4>6709681115</h4>
+                <p>ข้อมูลข้อมูลข้อมูล 5</p>
+            </div>
+            <div class="student-card">
+                <img src="pic/std.png" alt="Student 6">
+                <h3>นายพชรพัฒน์ สังยวน</h3>
+                <h4>ID : 6709616657</h4>
+                <p>ข้อมูลข้อมูลข้อมูล 6</p>
+            </div>
+        </div>
+    </section>
+    <section class="guest-book">
+        <h2>สมุดเข้าเยี่ยม</h2>
+        <div class="guest-book-container">
+            <div class="guest-form">
+                <h3>กรอกความคิดเห็นของคุณ</h3>
+                <form id="guestForm">
+                    <div class="form-group">
+                        <label for="name">ชื่อของคุณ:</label>
+                        <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">อีเมลของคุณ:</label>
+                        <input type="email" id="email" name="email" placeholder="กรอกอีเมลของคุณ" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="rating">ความพึงพอใจ:</label>
+                        <select id="rating" name="rating">
+                            <option value="ดีมาก">ดีมาก</option>
+                            <option value="ดี">ดีมาก</option>
+                            <option value="พอใช้">ดีมาก</option>
+                            <option value="ต้องปรับปรุง">ดีมาก</option>
+                        </select>
+                    </div>
+                     
+                    <div class="form-group">
+                        <label>ความคิดเห็นหรือข้อเสนอแนะ:</label>
+                        <textarea id="suggestions" name="suggestions" rows="5" placeholder="กรอกความคิดเห็นของคุณ"></textarea>
+                    </div>
+    
+                    <button type="submit">ส่งความคิดเห็น</button>
+                </form>
+            </div>
+    
+
+            <div class="guest-entries">
+                <h3>ความคิดเห็นทั้งหมด</h3>
+                <ul id="entriesList"></ul>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+    
+    
+
+</body>
+</html>
