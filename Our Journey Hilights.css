@@ -14,7 +14,9 @@ body {
     width: 100%;
     height: 200px;
     place-items: center;
-    
+    background-color: #dd9090 ;
+    border: 6px  outset #ee2e2e65;
+    box-shadow: 10px 10px   brown;
 }
 
 
@@ -38,7 +40,8 @@ body {
     overflow: hidden; 
     height: auto;
     min-height: 400px;
-
+    border-radius: 20px;
+    box-shadow:  5px 5px rgb(248, 40, 40);
 }
 
 
@@ -54,12 +57,14 @@ body {
 .name{
     padding: 20px;
     background-color: #ffcccc; 
-    border: 1px solid #000; 
+    border: 2px inset #dd5b34; 
     text-align: center; 
+    box-shadow: 5px 5px 30px inset rgb(238, 63, 63);
 }
 .namecontain{
     display: flex; 
-  justify-content: center; 
+    justify-content: center;
+    margin-top: 150px;
 }
 
 
