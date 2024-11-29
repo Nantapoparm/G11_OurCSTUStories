@@ -52,6 +52,14 @@ body {
     border-right: 1px solid #dd9090; 
 }
 
+/* Responsive: เมื่อหน้าจอเล็กกว่า 768px */
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
 
 
 
