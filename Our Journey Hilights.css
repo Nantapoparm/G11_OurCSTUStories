@@ -51,6 +51,17 @@ body {
     color: #333;
     border-right: 1px solid #dd9090; 
 }
+.name{
+    padding: 20px;
+    background-color: #ffcccc; 
+    border: 1px solid #000; 
+    text-align: center; 
+}
+.namecontain{
+    display: flex; 
+  justify-content: center; 
+}
+
 
 /* Responsive: เมื่อหน้าจอเล็กกว่า 768px */
 @media (max-width: 768px) {
