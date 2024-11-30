@@ -4,7 +4,20 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+nav {
+    
+    background-color: #4297a0;
+    padding: 1.5rem;
+    text-align: center;
+}
 
+nav a {
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: #f4eae6;
+    font-family: "Josefin Sans", sans-serif;
+}
 .head {
     display: grid;
     text-align: center;
@@ -43,7 +56,14 @@ body {
     box-shadow:  5px 5px rgb(248, 40, 40);*/
 }
 .box12 ,.box22, .box32, .box42{
-    background-color:#72bf6a ;
+    background-color:#dd9090 ;
+    text-align: left;
+    display: flex; 
+    padding: 10px;
+    font-size: 18px;
+    color: #f5f5f5;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-right: 1px solid #dd9090; 
 
 }
 
@@ -54,10 +74,9 @@ body {
     background-color: aliceblue; 
 }
 
-.box11 ,.box12,.box21,.box22,.box31,.box32,.box41,.box42{
-    text-align: start;
-    display: flex;
-    justify-content: center; 
+.box11,.box21,.box31,.box41{
+    text-align: left;
+    display: flex; 
     padding: 10px;
     font-size: 18px;
     color: #f5f5f5;
