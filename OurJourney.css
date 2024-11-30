@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    
+    /* รอเปลี่ยนสี */
     background-color: #4297a0;
     padding: 1.5rem;
     text-align: center;
@@ -97,6 +97,7 @@ nav a {
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 80px;
+    font-size: 40px;
 }
 
 
