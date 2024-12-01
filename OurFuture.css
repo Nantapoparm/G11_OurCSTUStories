@@ -109,7 +109,7 @@ header {
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
-    font-family: "Mali", cursive;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
     color: #1f3d4d;
 }
 
@@ -121,7 +121,7 @@ header {
     line-height: 1.6;
     opacity: 0; /* ข้อความ "text1" เริ่มต้นแสดง */
     transition: opacity 0.5s ease; /* ให้มีการเปลี่ยนแปลงของ opacity เมื่อคลิก */
-    font-family: "Mali", cursive;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
 
 .card:hover{
