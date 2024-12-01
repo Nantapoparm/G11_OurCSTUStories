@@ -5,7 +5,7 @@
 }
 body {
     color: aliceblue;
-    background-color: #f4eae6;
+    background-color: #fff2df;
 }
 /* Nav bar */
 nav {
@@ -68,10 +68,15 @@ nav ul li a:hover{
 /* Header */
 header {
     text-align: center;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #a1a1a1;
     margin-top: 5rem ;
     padding-top: 3rem;
-    padding-bottom: 1rem
+    padding-bottom: 1rem;
+}
+header h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 35px;
+    color: #8f4b0b;
 }
 
 /* section info */
@@ -87,7 +92,7 @@ header {
 .card {
     position: relative;
     height: 500px;
-    background-color: hsla(21, 41%, 83%, 0.816);
+    background-color: #c1946a;
     padding: 1rem;
     display: flex;
     flex-direction: column;
