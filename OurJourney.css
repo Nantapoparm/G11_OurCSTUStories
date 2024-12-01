@@ -27,6 +27,8 @@ nav a {
     text-align: center;
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    font-family: "Josefin Sans", sans-serif;
     width: 100%;
     height: 150px;
     place-items: center;
@@ -81,6 +83,9 @@ nav a {
     min-height: 300px;
     border-radius: 20px;
     box-shadow:  5px 5px rgb(248, 40, 40);
+    
+  /*  border-radius: 20px;
+    box-shadow:  5px 5px rgb(248, 40, 40);*/
 }
 .box12 ,.box22, .box32, .box42{
     background-color:#dd9090 ;
@@ -114,6 +119,7 @@ nav a {
 .name{
     font-style: italic;
     font-size: 30px;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
     padding: 20px;
     background-color: #ffcccc; 
     border: 2px inset #dd5b34;
@@ -141,5 +147,38 @@ nav a {
     }
     nav a{
         padding: 10px;
+    .logo {
+        font-size: 1.5rem;
+    }
+
+     nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #6b9a42;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        padding: 1rem 0;
+        z-index: 101;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+        opacity: 0.9;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        z-index: 1000;
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 20px;
     }
 }

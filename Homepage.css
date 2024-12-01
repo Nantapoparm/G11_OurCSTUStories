@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
-
+.homepagepic img{
+    width: 100%;
+    height: auto;
+}
 
 header {
     background: linear-gradient(135deg, gray, #93c995);
@@ -22,6 +24,7 @@ header .header-content {
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 header p {
@@ -30,48 +33,79 @@ header p {
 }
 
 
+/* Nav bar */
 nav {
-    background-color: #a49999;
-    padding: 10px 20px;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #405d27;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 1s ease;
+    box-shadow: 0 5px 10px rgb(0, 0, 0,0.2);
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: #f0f8ff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: default;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #f4eae6;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
 nav ul li {
-    margin: 0;
+    list-style: none;
+    position: relative;
+    margin: 0 20px;
+    padding: 0 2px;
 }
+
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 1.1em;
-    padding: 10px 15px;
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.5rem;
+    color: #f4eae6;
+    padding: 0;
 }
 
-nav ul li a:hover {
-    background-color: #692c2c;
-    color: white;
-    border-radius: 5px;
+nav ul li a:hover{
+    color: #1f3d4d;/* รอเปลี่ยนสี */
+    transition: all 0.5s ease-in-out;
 }
-
 
 .students-info {
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
+    
 }
 
 .students-info h2 {
     font-size: 2em;
-    
     margin-bottom: 20px;
     color: #333;
+}
+.students-info h4 {
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .students-container {
@@ -113,9 +147,10 @@ nav ul li a:hover {
 
 
 .student-card h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #4CAF50;
     margin: 15px 0;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
 
 .student-card p {
@@ -230,21 +265,41 @@ button:hover {
     header h1 {
         font-size: 1.8em;
     }
-
+    /* Nav */
     nav ul {
+        display: none;
         flex-direction: column;
-        gap: 10px;
+        background-color: #6b9a42;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        padding: 1rem 0;
+        z-index: 101;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+        opacity: 0.9;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     nav ul li a {
-        font-size: 1em;
+        font-size: 20px;
     }
-
+    /* Nav */
     .students-container {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-
     .guest-book-container {
         flex-direction: column;
     }
@@ -269,10 +324,6 @@ button:hover {
         flex-direction: row;
         gap: 15px;
     }
-
-    nav ul {
-        gap: 15px;
-    }
 }
 
 
@@ -294,24 +345,9 @@ button:hover {
         flex-direction: row;
         gap: 20px;
     }
-
-    nav ul {
-        gap: 20px;
-    }
 }
-nav {
-    /* รอเปลี่ยนสี */
-    background-color: #4297a0;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    color: #f4eae6;
-    font-family: "Josefin Sans", sans-serif;
+.scroll {
+    overflow: hidden;
 }
 .loop {
     display: flex;
@@ -333,7 +369,7 @@ nav a {
     animation: scroll-text 30s linear infinite;
     margin: 0;
     font-size: larger;
-    color: #e57f84;
+    color: #c1946a;
     font-family: "Josefin Sans", sans-serif;
     margin: 0.5rem;
 }
