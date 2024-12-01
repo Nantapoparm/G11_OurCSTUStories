@@ -1,22 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(255, 255, 255);
     font-family: 'Arial', sans-serif;
 }
 
-nav {
-    /* รอเปลี่ยนสี */
-    background-color: #4297a0;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    color: #f4eae6;
-    font-family: "Josefin Sans", sans-serif;
-}
 .head {
     display: grid;
     text-align: center;
@@ -114,7 +106,6 @@ nav a {
     font-size: 40px;
 }
 
-/* Nav bar */
 nav {
     font-family: "Josefin Sans", sans-serif;
     background-color: #4297a0;/* รอเปลี่ยนสี */
@@ -127,12 +118,13 @@ nav {
     box-shadow: 0 5px 10px rgb(0, 0, 0,0.2);
     text-shadow: 2px 2px 4px #000000;
     z-index: 100;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
 
 .logo {
+    color: #f0f8ff;
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -164,7 +156,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.5rem;
     color: #f4eae6;
-    
+    padding: 0;
 }
 
 nav ul li a:hover{
@@ -204,6 +196,7 @@ nav ul li a:hover{
     }
 
     .menu-toggle {
+        z-index: 1000;
         display: block;
     }
 
