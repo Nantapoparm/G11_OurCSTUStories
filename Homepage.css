@@ -22,6 +22,7 @@ header .header-content {
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 header p {
@@ -65,13 +66,16 @@ nav ul li a:hover {
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
+    
 }
 
 .students-info h2 {
     font-size: 2em;
-    
     margin-bottom: 20px;
     color: #333;
+}
+.students-info h4 {
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .students-container {
