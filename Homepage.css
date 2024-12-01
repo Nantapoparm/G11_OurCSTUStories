@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #fff2df;
+}
 .homepagepic img{
     width: 100%;
     height: auto;
