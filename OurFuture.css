@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: #1f3d4d;/* รอเปลี่ยนสี */
+    color: #c1946a;
     transition: all 0.5s ease-in-out;
 }
 
@@ -77,6 +77,12 @@ header h1 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 35px;
     color: #8f4b0b;
+}
+header p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    color: #053c13;
+    margin-top: 15px;
 }
 
 /* section info */
@@ -101,7 +107,7 @@ header h1 {
     cursor: pointer;
     transition: 0.3s ease;
     border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow:  5px 5px #835340;
 }
 
 .picture img {
@@ -115,13 +121,15 @@ header h1 {
     margin-top: 50px;
     font-size: 20px;
     font-family: "IBM Plex Sans Thai Looped", sans-serif;
-    color: #1f3d4d;
+    color: #325613;
+    font-weight: 500;
 }
 
 .text1 {
     position: absolute;
     font-size: 20px;
-    color: #1f3d4d;
+    color: #4f3222;
+    font-weight: 500;
     padding: 2rem;
     line-height: 1.6;
     opacity: 0; /* ข้อความ "text1" เริ่มต้นแสดง */
@@ -131,7 +139,7 @@ header h1 {
 
 .card:hover{
     transform: translateY(-10px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow:  5px 5px #835340;
 }
 
 .card.clicked .picture img ,.card.clicked .name{

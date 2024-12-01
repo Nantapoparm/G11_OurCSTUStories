@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #fff2df;
+    background-color: #f7e9d5;
 }
 .homepagepic img{
     width: 100%;
@@ -91,13 +91,13 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    color: #1f3d4d;/* รอเปลี่ยนสี */
+    color: #c1946a;/* รอเปลี่ยนสี */
     transition: all 0.5s ease-in-out;
 }
 
 .students-info {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #fff2df;
     text-align: center;
     
 }
@@ -105,7 +105,8 @@ nav ul li a:hover{
 .students-info h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #3e4444;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
 .students-info h4 {
     font-family: "Josefin Sans", sans-serif;
@@ -132,13 +133,12 @@ nav ul li a:hover{
 
 
 .student-card {
-    background-color: white;
+    background-color: #b79c65;
     border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     max-width: 300px;
-
     text-align: center; 
 }
 
@@ -147,11 +147,10 @@ nav ul li a:hover{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .student-card h3 {
-    font-size: 1.25em;
-    color: #4CAF50;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #f5f9ec;
     margin: 15px 0;
     font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
@@ -173,11 +172,12 @@ footer {
     position: relative;
 }
 .guest-book {
-    background-color: #f9f9f9;
+    background-color: #fff2df;
     padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
 
 .guest-book h2 {
@@ -197,7 +197,7 @@ footer {
 .guest-form,
 .guest-entries {
     flex: 1;
-    background-color: white;
+    background-color: #dac292;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -233,7 +233,7 @@ button {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #405d27;
     color: white;
     border: none;
     cursor: pointer;
