@@ -136,3 +136,91 @@ header {
     opacity: 1; /* ทำให้ข้อความใน "text1" ปรากฏ */
 }
 
+/* Responsive */
+@media screen and (max-width:1279px ) {
+    .container{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        padding: 2rem;
+        gap: 2rem ;
+    }
+    .picture img {
+        width: 250px;
+        height: 250px;
+    }
+    .name , .text1{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+     nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #9ef5ff; /*รอเปลี่ยนสี*/
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        padding: 1rem 0;
+        z-index: 101;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+        opacity: 0.9;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    header {
+        font-size: 10px;
+    }
+    
+    .card{
+        width: 70%;
+        height: 80%;
+        padding: 1rem;
+        height: fit-content;
+    }
+
+    .picture img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .name , .text1{
+        font-size: 13px;
+    }
+
+    .text1{
+        padding: 1rem;
+    }
+
+    .name {
+        margin-top: 10px;
+    }
+
+    
+}
