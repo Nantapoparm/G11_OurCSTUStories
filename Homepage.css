@@ -322,10 +322,6 @@ button:hover {
         flex-direction: row;
         gap: 15px;
     }
-
-    nav ul {
-        gap: 15px;
-    }
 }
 
 
@@ -347,25 +343,8 @@ button:hover {
         flex-direction: row;
         gap: 20px;
     }
-
-    nav ul {
-        gap: 20px;
-    }
-}
-nav {
-    /* รอเปลี่ยนสี */
-    background-color: #4297a0;
-    padding: 1.5rem;
-    text-align: center;
 }
 
-nav a {
-    text-decoration: none;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    color: #f4eae6;
-    font-family: "Josefin Sans", sans-serif;
-}
 .loop {
     display: flex;
     border: 0.25px solid #2f5061;

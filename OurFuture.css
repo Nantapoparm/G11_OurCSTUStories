@@ -206,16 +206,16 @@ header {
     }
 
     .picture img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     .name , .text1{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .text1{
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .name {
