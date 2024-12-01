@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
-
+.homepagepic img{
+    width: 100%;
+    height: auto;
+}
 
 header {
     background: linear-gradient(135deg, gray, #93c995);
@@ -34,7 +36,7 @@ header p {
 /* Nav bar */
 nav {
     font-family: "Josefin Sans", sans-serif;
-    background-color: #4297a0;/* รอเปลี่ยนสี */
+    background-color: #405d27;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,7 +147,7 @@ nav ul li a:hover{
 
 
 .student-card h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #4CAF50;
     margin: 15px 0;
     font-family: "IBM Plex Sans Thai Looped", sans-serif;
@@ -267,7 +269,7 @@ button:hover {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #9ef5ff; /*รอเปลี่ยนสี*/
+        background-color: #6b9a42;
         position: absolute;
         top: 90px;
         left: 0;
@@ -298,7 +300,6 @@ button:hover {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-
     .guest-book-container {
         flex-direction: column;
     }
@@ -345,7 +346,9 @@ button:hover {
         gap: 20px;
     }
 }
-
+.scroll {
+    overflow: hidden;
+}
 .loop {
     display: flex;
     border: 0.25px solid #2f5061;
@@ -366,7 +369,7 @@ button:hover {
     animation: scroll-text 30s linear infinite;
     margin: 0;
     font-size: larger;
-    color: #e57f84;
+    color: #c1946a;
     font-family: "Josefin Sans", sans-serif;
     margin: 0.5rem;
 }

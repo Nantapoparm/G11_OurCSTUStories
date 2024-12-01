@@ -109,7 +109,7 @@ body {
 
 nav {
     font-family: "Josefin Sans", sans-serif;
-    background-color: #4297a0;/* รอเปลี่ยนสี */
+    background-color: #405d27;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -177,7 +177,7 @@ nav ul li a:hover{
      nav ul {
         display: none;
         flex-direction: column;
-        background-color: #9ef5ff; /*รอเปลี่ยนสี*/
+        background-color: #6b9a42;
         position: absolute;
         top: 90px;
         left: 0;
