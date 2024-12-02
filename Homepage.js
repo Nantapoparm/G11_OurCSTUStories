@@ -1,11 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => 
-    {
+document.addEventListener("DOMContentLoaded", () => {
     const guestForm = document.getElementById("guestForm");
     const entriesList = document.getElementById("entriesList");
 
+    // ฟังก์ชันบันทึกข้อมูลใน localStorage
+    function saveEntries(entries) {
+        localStorage.setItem("guestEntries", JSON.stringify(entries));
+    }
 
-    function addEntryToList(name, email, rating, suggestions) 
-    {
+    // ฟังก์ชันโหลดข้อมูลจาก localStorage
+    function loadEntries() {
+        const savedEntries = localStorage.getItem("guestEntries");
+        return savedEntries ? JSON.parse(savedEntries) : [];
+    }
+
+    // ฟังก์ชันเพิ่มความคิดเห็นในหน้า
+    function addEntryToList(name, email, rating, suggestions) {
         const listItem = document.createElement("li");
         listItem.innerHTML = `
             <strong>ชื่อ:</strong> ${name}<br>
@@ -16,21 +25,34 @@ document.addEventListener("DOMContentLoaded", () =>
         entriesList.appendChild(listItem);
     }
 
+    // โหลดความคิดเห็นเมื่อเริ่มต้น
+    const entries = loadEntries();
+    entries.forEach((entry) => {
+        addEntryToList(entry.name, entry.email, entry.rating, entry.suggestions);
+    });
 
+    // เมื่อผู้ใช้ส่งฟอร์ม
     guestForm.addEventListener("submit", (event) => {
-        event.preventDefault(); 
+        event.preventDefault();
         const formData = new FormData(guestForm);
 
-   
         const name = formData.get("name");
         const email = formData.get("email");
         const rating = formData.get("rating");
         const suggestions = formData.get("suggestions");
 
-
+        // เพิ่มความคิดเห็น
         addEntryToList(name, email, rating, suggestions);
 
+        // อัปเดตความคิดเห็นใน localStorage
+        entries.push({ name, email, rating, suggestions });
+        saveEntries(entries);
 
+        
         guestForm.reset();
     });
 });
+function toggleMenu(){
+    const menu  = document.querySelector("nav ul");
+    menu.classList.toggle("active");
+}
