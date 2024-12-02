@@ -376,4 +376,24 @@ button:hover {
     font-family: "Josefin Sans", sans-serif;
     margin: 0.5rem;
 }
+footer {
+    background-color: #274210;
+    font-family: "Josefin Sans", sans-serif;
+}
+footer h1 {
+    float: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid blanchedalmond;
+}
+footer h3 {
+    margin-bottom: 15px;
+    float: left;
+    display: block;
+}
+.contact {
+    display: flex;
+    clear: both;
+}
+.con1 {
 
+}
