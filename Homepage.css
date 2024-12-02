@@ -162,15 +162,6 @@ nav ul li a:hover{
     line-height: 1.6;
 }
 
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    position: relative;
-}
 .guest-book {
     background-color: #fff2df;
     padding: 40px 20px;
@@ -308,6 +299,13 @@ button:hover {
     }
 }
 
+@media (max-width: 580px) {
+    .contact{
+        grid-template-columns : 1fr !important;
+
+    }
+}
+
 
 @media (min-width: 641px) and (max-width: 1024px) {
     header {
@@ -377,23 +375,32 @@ button:hover {
     margin: 0.5rem;
 }
 footer {
+    color: white;
+    padding: 20px;
+    font-size: 0.9em;
+    position: relative;
     background-color: #274210;
     font-family: "Josefin Sans", sans-serif;
 }
 footer h1 {
     float: left;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-bottom: 1px solid blanchedalmond;
 }
 footer h3 {
     margin-bottom: 15px;
-    float: left;
-    display: block;
+   
+    display: grid;
 }
 .contact {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     clear: both;
 }
-.con1 {
 
+.contact h3{
+    justify-self: start;
 }
+
