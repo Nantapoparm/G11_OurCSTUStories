@@ -39,6 +39,10 @@ body {
     margin: 0.5rem;
 }
 
+.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+    transform: translateY(-10px);
+    box-shadow:  5px 5px rgb(136, 80, 8);
+}
 .box {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -57,6 +61,7 @@ body {
     min-height: 300px;
     border-radius: 15px;
     box-shadow:  5px 5px rgb(136, 80, 8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
   /*  border-radius: 20px;
     box-shadow:  5px 5px rgb(248, 40, 40);*/

@@ -141,7 +141,6 @@ nav ul li a:hover{
     max-width: 300px;
     text-align: center; 
 }
-
 .student-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -319,7 +318,7 @@ button:hover {
     }
 
     .students-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
     }
 
@@ -376,3 +375,4 @@ button:hover {
     font-family: "Josefin Sans", sans-serif;
     margin: 0.5rem;
 }
+
