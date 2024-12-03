@@ -220,7 +220,7 @@ nav ul li a:hover{
     }
 }
 footer {
-    color: white;
+    color: #587540;
     padding: 20px;
     font-size: 0.9em;
     position: relative;
@@ -231,7 +231,7 @@ footer h1 {
     float: left;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-bottom: 1px solid blanchedalmond;
+    border-bottom: 1px solid rgb(116, 170, 91);
 }
 footer h3 {
     margin-bottom: 15px;
