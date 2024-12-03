@@ -48,11 +48,16 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.push({ name, email, rating, suggestions });
         saveEntries(entries);
 
-        
+        // แสดงข้อความขอบคุณ
+        alert("ขอบคุณที่ส่งความคิดเห็นของคุณ!");
+
+        // ล้างฟอร์ม
         guestForm.reset();
     });
 });
-function toggleMenu(){
-    const menu  = document.querySelector("nav ul");
+
+// ฟังก์ชันสำหรับ toggle เมนูใน navbar
+function toggleMenu() {
+    const menu = document.querySelector("nav ul");
     menu.classList.toggle("active");
 }
